@@ -24,3 +24,17 @@ function sair(){
     alert("Até mais!");
     area.innerHTML = "Você saiu da conta"
 }
+
+
+
+// Função media
+
+function media( num1, num2){
+    var nota = (num1 + num2)/2;
+
+    if(nota >7){
+        console.log("Parabéns você está aprovado! " + nota);
+    }else{
+        console.log("Sinto muito. Você está reprovado! " + nota);
+    }
+}
