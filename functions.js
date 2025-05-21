@@ -1,5 +1,8 @@
 
-var area = document.getElementById('area');
+document.write(`<h2 id="area"> Bem vindo! </h2> <br> 
+<button onclick="entrar();" class="btn-entrar"> Entrar</button>`); // Colocando tags através do js
+
+var area = document.getElementById('area'); 
 var btnEntrar = document.querySelector(".btn-entrar");
 
 // Função entrar na conta
@@ -10,7 +13,7 @@ function entrar(){
         alert("Ops! aldo deu errado!");
         area.innerHTML = "Informe seu nome para prosseguir!";
     }else{
-        area.innerHTML = "Bem vindo " + nome + " "; // Caso o usuárop tenha escrito algo inclui texto e nome no h2
+        area.innerHTML = "Bem vindo " + nome + "</br>"; // Caso o usuárop tenha escrito algo inclui texto e nome no h2
 
         btnEntrar.style = "display: none"; //Esconder btn entrar quando estiver logado
 
